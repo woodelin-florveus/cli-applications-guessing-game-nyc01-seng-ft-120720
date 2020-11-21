@@ -5,13 +5,13 @@ def run_guessing_game
   user_input = gets.chomp
     if user_input == rand_sum.to_s
       puts "You guessed the correct number!"
-    elsif user_input != rand_sum.to_s
+    elsif user_input == "exit"
+      puts "Goodbye" 
+    else user_input != rand_sum.to_s
       puts "Sorry! The computer guessed #{rand_sum}."
     end
 
-    if user_input == "exit"
-      puts "Goodbye"
-    end
+
 
 
   end
