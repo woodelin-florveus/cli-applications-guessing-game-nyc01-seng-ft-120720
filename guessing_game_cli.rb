@@ -9,9 +9,14 @@ def run_guessing_game
       puts "You guessed the correct number!"
     elsif user_input != rand_sum
       puts "Sorry! The computer guessed #{rand_sum}."
-    elsif user_input == "exit"
-        puts "Goodbye!"
     end
+
+    if user_input == 'exit'
+      puts "Goodbye"
+    end
+
+  elsif user_input == "exit"
+      puts "Goodbye!"
 
     puts "Guess a number between 1 and 6.\n"
     rand_sum = rand(1..6).to_s
