@@ -11,7 +11,7 @@ def run_guessing_game
       puts "Sorry! The computer guessed #{rand_sum}."
     end
 
-    if user_input == 'exit'
+    if user_input == "exit"
       puts "Goodbye"
     end
 
